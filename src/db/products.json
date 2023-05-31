@@ -1,0 +1,72 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "category": "personal",
+      "imagen": "https://s3-rokys-pro.s3.amazonaws.com/media/catalog/product/b/b/bb17e6be-59c5-46ce-abc5-20fd6f4fc1a8.jpg",
+      "nombre": "1/4 de pollo + papa + ensalada",
+      "precio": 13.5,
+      "stock": 5,
+      "estado": true
+    },
+    {
+      "id": 2,
+      "category": "familiar",
+      "imagen": "https://s3-rokys-pro.s3.amazonaws.com/media/catalog/product/a/9/a945b9a9-4886-435e-aace-ec8cd00864d8.jpg",
+      "nombre": "1 pollo + papa",
+      "precio": 18,
+      "stock": 2,
+      "estado": true
+    },
+    {
+      "id": 3,
+      "category": "personal",
+      "imagen": "https://s3-rokys-pro.s3.amazonaws.com/media/catalog/product/s/k/sku_cyberrokys_1pollo_papa_7215.jpg",
+      "nombre": "1/4 de pollo uno",
+      "precio": 33.5,
+      "stock": 5,
+      "estado": false
+    },
+    {
+      "id": 4,
+      "category": "personal",
+      "imagen": "https://s3-rokys-pro.s3.amazonaws.com/media/catalog/product/s/k/sku_cyberrokys_1pollo_papa_ensalada_gas1.jpg",
+      "nombre": "1/4 de pollo dos",
+      "precio": 53.5,
+      "stock": 5,
+      "estado": true
+    },
+    {
+      "id": 5,
+      "category": "familiar",
+      "imagen": "https://s3-rokys-pro.s3.amazonaws.com/media/catalog/product/s/k/sku_cyberrokys_1pollo_papa_ensalada_gas1.jpg",
+      "nombre": "1/4 de pollo tres",
+      "precio": 33.5,
+      "stock": 5,
+      "estado": true
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "nombre": "sebastian",
+      "email": "admin",
+      "password": "admin",
+      "rol": "admin"
+    },
+    {
+      "id": 2,
+      "nombre": "jose",
+      "email": "jose@gmail.com",
+      "password": "jose123",
+      "rol": "cocinero"
+    },
+    {
+      "nombre": "betsaly",
+      "email": "betsaly@gmail.com",
+      "password": "123456789",
+      "rol": "cliente",
+      "id": 3
+    }
+  ]
+}
