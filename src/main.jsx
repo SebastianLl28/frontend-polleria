@@ -5,8 +5,9 @@ import GlobalStyle from './styled-components/base/GlobalStyle.jsx'
 import { ThemeProvider } from 'styled-components'
 import themes from './styled-components/base/Theme.jsx'
 
-
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+
+// import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 
 const queryClient = new QueryClient()
 
@@ -16,6 +17,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
     <ThemeProvider theme={themes['theme01']}>
     <QueryClientProvider client={queryClient}>
       <App />
+      {/* <ReactQueryDevtools/> */}
     </QueryClientProvider>
     </ThemeProvider>
   </React.StrictMode>,

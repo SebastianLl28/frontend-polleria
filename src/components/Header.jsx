@@ -27,7 +27,7 @@ const Header = () => {
           <li>
             <CardLink to='/login'>
               <span>Ingresar</span>
-              <Icon src="./icon-user.svg"/>
+              <Icon src="./icons/icon-user.svg"/>
             </CardLink>
           </li>
           <Center>

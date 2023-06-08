@@ -84,6 +84,15 @@ const GlobalStyle = createGlobalStyle`
     line-height: 1.4em;
     background-color: #1E1E1E;
   }
+
+  body::-webkit-scrollbar {
+    width: 0px;
+    background-color: #dadada46;
+  } 
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #585858;
+  }
 `
 
 export default GlobalStyle

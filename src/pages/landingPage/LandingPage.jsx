@@ -6,7 +6,7 @@ const LandingPage = () => {
     <>
       <SwipeSlider />
       <Promociones />
-      <Empresa />
+      <Empresa/>
       <Testimonios />
       <Ubicacion />
       <Footer />

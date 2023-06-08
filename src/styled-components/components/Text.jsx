@@ -6,6 +6,7 @@ export const Title = styled.h2`
   font-family: ${({theme}) => theme.fonts.font2};
   font-weight: 400;
   color: ${({color ,theme}) => color ?? theme.color.text100};
+  text-align: ${(prop) => prop.align ?? 'start'};
 `
 
 export const LinkText = styled(Link)`
