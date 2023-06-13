@@ -1,3 +1,4 @@
+import { darken } from "polished";
 import styled from "styled-components";
 
 export const ButtonPrimary = styled.button`
@@ -7,4 +8,8 @@ export const ButtonPrimary = styled.button`
   background-color: ${({theme}) => theme.color.primary100};
   border-radius: 0.4rem;
   cursor: pointer;
+
+  &:hover {
+    background-color: ${({theme}) => darken(.06, theme.color.primary100)};
+  }
 `

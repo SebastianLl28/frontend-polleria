@@ -1,21 +1,19 @@
 import styled from "styled-components"
 import { useCarritoStore } from "../../../store/carrito"
 import { Paragraph } from "../../../styled-components/components/Text"
+import { ButtonPrimary } from "../../../styled-components/components/Button"
 
 const CardProduct = ({ product }) => {
 
   const addCarrito = useCarritoStore(state => state.addCarrito)
-  // const clearCarrito = useCarritoStore(state => state.clearCarrito)
-
 
   const handleAdd = (id) => {
-    // clearCarrito()
     addCarrito(id)
   }
 
 
   return (
-    <Main onClick={() => handleAdd(product.id)}>
+    <Main>
       <picture>
         <Image src={`${product.imagen}`}/>
       </picture>
@@ -23,27 +21,18 @@ const CardProduct = ({ product }) => {
         <Name>{product.nombre}</Name>
         <Price>$/{product.precio}</Price>
       </Container>
+      <ButtonPrimary onClick={() => handleAdd(product.id)}>Agregar al Carrito</ButtonPrimary>
     </Main>
   )
 }
 
 export default CardProduct
 
-/*
-  "id"
-  "category"
-  "imagen"
-  "nombre"
-  "precio"
-  "stock"
-  "estado"
-*/
-
 const Main = styled.li`
   max-width: 600px;
   display: grid;
   grid-template-rows: 1fr .2fr;
-  height: 15rem;
+  height: 18rem;
   border-radius: .2rem;
   overflow: hidden;
   position: relative;
@@ -60,26 +49,6 @@ const Main = styled.li`
     height: 100%;
     overflow: hidden;
     position: relative;
-
-    &::after{
-      width: 100%;
-      height: 100%;
-      content: 'Agregar al carrito';
-      display: block;
-      background-color: rgba(0, 0, 0, 0.4);
-      position: absolute;
-      border-radius: .2rem;
-      transform: translateX(100%);
-      transition: transform 0.4s ease;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.5em;
-    }
-
-    &:hover::after{
-      transform: translateX(0);
-    }
   }
 `
 

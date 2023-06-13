@@ -11,7 +11,6 @@ const Products = () => {
   const { data: products, isLoading } = useFetchProducts()
   
   const addCarrito = useCarritoStore(state => state.addCarrito)
-  // const clearCarrito = useCarritoStore(state => state.clearCarrito)
 
 
   const handleAdd = (id) => {
