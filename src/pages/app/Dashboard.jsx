@@ -12,5 +12,4 @@ export default Dashboard
 
 const Main = styled.div `
   height: 100%;
-  background-color: red;
 `

@@ -107,6 +107,15 @@
       "precio": 33.5,
       "stock": 5,
       "estado": true
+    },
+    {
+      "id": 13,
+      "category": "personal",
+      "imagen": "https://images.rappi.pe/restaurants_background/jom-1571428353609.png?e=webp&q=40&d=300x300",
+      "nombre": "1/3 de pollo tres",
+      "precio": 10,
+      "stock": 2,
+      "estado": true
     }
   ],
   "users": [

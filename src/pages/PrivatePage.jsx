@@ -21,6 +21,6 @@ export default PrivatePage
 
 
 const Container = styled.div`
-  padding-left: 4.3rem;
+  padding-left: 5rem;
   height: 100vh;
 `

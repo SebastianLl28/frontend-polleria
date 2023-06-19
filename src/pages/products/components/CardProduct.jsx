@@ -6,8 +6,10 @@ import { ButtonPrimary } from "../../../styled-components/components/Button"
 const CardProduct = ({ product }) => {
 
   const addCarrito = useCarritoStore(state => state.addCarrito)
+  const clearCarrito = useCarritoStore(state => state.clearCarrito)
 
   const handleAdd = (id) => {
+    // clearCarrito()
     addCarrito(id)
   }
 

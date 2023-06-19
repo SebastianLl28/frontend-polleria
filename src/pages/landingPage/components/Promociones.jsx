@@ -7,7 +7,6 @@ const Promociones = () => {
     <Main>
       <Container>
         <Title>¿Que hay de nuevo?</Title>
-
         <Wrapper>
           <CardPromocion />
           <CardPromocion />
@@ -24,6 +23,8 @@ const Main = styled(Sections)`
 `
 
 const Container = styled(ContainerSection)`
+  display: grid;
+  gap: 2rem;
 `
 
 const Wrapper = styled.article`

@@ -8,29 +8,32 @@ import Footer from "../../components/Footer"
 
 const Products = () => {
 
-  const { data: products, isLoading } = useFetchProducts()
+  const { data: products, isLoading } = useFetchProducts();
+  const limitage = 8;
   
-  const addCarrito = useCarritoStore(state => state.addCarrito)
 
-
-  const handleAdd = (id) => {
-    // clearCarrito()
-    addCarrito(id)
-  }
 
   return (
+    <>
     <Main>
       <FilterProduct />
       { isLoading ? (
         <div>...Loading</div>
       ) : (
+        <>
         <ul>
           {products.map(product => (
             <CardProduct product={product} key={product.id}/>
           ))}
         </ul>
+        <Prueba>
+          {Math.ceil(products.length / limitage)}
+        </Prueba>
+        </>
       )}
     </Main>
+    <Footer></Footer>
+    </>
   )
 }
 
@@ -45,6 +48,7 @@ const Main = styled(ContainerSection)`
   gap: 2rem;
   grid-template-areas: 'filter product';
   position: relative;
+  padding-bottom: 5rem;
 
   & ul {
     display: grid;
@@ -54,4 +58,13 @@ const Main = styled(ContainerSection)`
     border-radius: .5rem;
     grid-area: product;
   }
+`
+
+const Prueba = styled.div`
+  position: absolute;
+  background-color: red;
+  display: inline-block;
+  right: 0;
+  bottom: 0;
+  margin-bottom: 2rem;
 `

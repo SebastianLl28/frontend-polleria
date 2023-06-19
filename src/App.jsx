@@ -16,18 +16,18 @@ const App = () => {
       <CarProducts />
       <Routes>
         <Route element={<PublicPage />}>
-          <Route path="/" element = {<LandingPage/>}/>
-          <Route path="/products" element = {<Products/>}/>
-          <Route path="/locales" element = {<Locales/>}/>
-          <Route path="/login" element = {<Login/>}/>
-          <Route path="/register" element = {<Register/>}/>
+          <Route path="/" element={<LandingPage />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/locales" element={<Locales />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/register" element={<Register />} />
         </Route>
-        <Route element= {<PrivatePage/>}>
-          <Route path="/app" element= {<Dashboard />}></Route>
+        <Route element={<PrivatePage />}>
+          <Route path="/app" element={<Dashboard />}></Route>
         </Route>
       </Routes>
     </BrowserRouter>
-  )
-}
+  );
+};
 
-export default App
+export default App;

@@ -20,8 +20,8 @@ const CarProducts = () => {
         <Icon src="./icons/icon-x.svg" onClick={setOpen}/>
       </Header>
       <List>
-        {products.map(productId => (
-          <CardProduct productId={productId} key={productId}/>
+        {products.map((productId) => (
+          <CardProduct productId={productId} key={productId.id}/>
         ))}
       </List>
       <Button>Comprar</Button>
@@ -60,6 +60,7 @@ const List = styled.div`
   overflow-y: scroll;
   grid-area: body;
   align-content: start;
+  padding-right: .5rem;
 
   &::-webkit-scrollbar {
     width: 8px;
